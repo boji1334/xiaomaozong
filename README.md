@@ -19,6 +19,14 @@
 | --- | --- |
 | <img src="assets/original-drawing.jpg" alt="小猫总原图" width="260"> | <img src="assets/contact-sheet.png" alt="小猫总动作表" width="420"> |
 
+### 额外行走动作
+
+Codex 当前宠物包使用固定的 9 行状态表，所以行走动作作为扩展资源单独放在仓库里，不会破坏 `codex-pet/` 的可安装结构。
+
+| 向右走 | 向左走 |
+| --- | --- |
+| <img src="assets/previews/walking-right.gif" alt="小猫总向右走" width="160"> | <img src="assets/previews/walking-left.gif" alt="小猫总向左走" width="160"> |
+
 ### 包内容
 
 - `codex-pet/pet.json`: Codex 宠物配置
@@ -26,7 +34,9 @@
 - `assets/original-drawing.jpg`: 原始参考图
 - `assets/contact-sheet.png`: QA 动作总览
 - `assets/previews/*.gif`: 单行动作预览
+- `assets/walking/*`: 额外行走动作 strip 和源图
 - `dist/xiaomaozong-codex-pet.zip`: 可直接下载的宠物包
+- `dist/xiaomaozong-walking-assets.zip`: 额外行走动作资源包
 
 ### 安装
 
@@ -63,6 +73,14 @@ mkdir "$env:USERPROFILE\.codex\pets\xiaomian"
 | --- | --- |
 | <img src="assets/original-drawing.jpg" alt="Original drawing for Xiao Mao Zong" width="260"> | <img src="assets/contact-sheet.png" alt="Xiao Mao Zong contact sheet" width="420"> |
 
+### Extra Walking Action
+
+Codex currently uses a fixed 9-row pet state sheet, so the walking action is provided as an extra repository asset. It does not change or break the installable `codex-pet/` package.
+
+| Walk right | Walk left |
+| --- | --- |
+| <img src="assets/previews/walking-right.gif" alt="Xiao Mao Zong walking right" width="160"> | <img src="assets/previews/walking-left.gif" alt="Xiao Mao Zong walking left" width="160"> |
+
 ### Package Contents
 
 - `codex-pet/pet.json`: Codex pet metadata
@@ -70,7 +88,9 @@ mkdir "$env:USERPROFILE\.codex\pets\xiaomian"
 - `assets/original-drawing.jpg`: original reference image
 - `assets/contact-sheet.png`: QA contact sheet
 - `assets/previews/*.gif`: per-state animation previews
+- `assets/walking/*`: extra walking strips and source image
 - `dist/xiaomaozong-codex-pet.zip`: downloadable pet package
+- `dist/xiaomaozong-walking-assets.zip`: extra walking action asset package
 
 ### Install
 
